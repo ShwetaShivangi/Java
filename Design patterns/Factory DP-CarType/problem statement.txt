@@ -1,0 +1,68 @@
+class Car {
+
+   String make;
+   String model;
+
+   public Car(String make, String model) {
+       this.make = make;
+       this.model = model;
+   }
+
+   public String getMake() {
+       return make;
+   }
+
+   public void setMake(String make) {
+       this.make = make;
+   }
+
+   public String getModel() {
+       return model;
+   }
+
+   public void setModel(String model) {
+       this.model = model;
+   }
+}
+
+
+class VolkswagenPolo extends Car {
+
+   public VolkswagenPolo(String make, String model) {
+       super(make, model);
+   }
+
+}
+
+class FiatPanda extends Car {
+
+   public FiatPanda(String make, String model) {
+       super(make, model);
+   }
+}
+
+class ToyotaYaris extends Car {
+
+   public ToyotaYaris(String make, String model) {
+       super(make, model);
+   }
+}
+
+public void main(String args[]) {
+
+   Car newCar;
+  
+   if (italian) {
+       newCar = new Car("Fiat", "Panda");
+   }
+   else if (german) {
+       newCar = new Car("Volkswagen", "Polo");
+   }
+   else if (japanese) {
+       newCar = new Car("Toyota", "Yaris");
+   }
+
+}
+
+
+Refactor the code and apply a well-known design pattern in such a way as to change the concrete type of the newCar object to a specific class like FiatPanda. Refactor the Car class to prevent it from being instantiated.
